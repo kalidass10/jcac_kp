@@ -1,6 +1,12 @@
 # Jcac-jenkins
 
-Spinup jenkins using JCAC plugin template and run docker as slave.
+- Spinup jenkins using JCAC plugin template and run docker as slave.
+- Run sample java project to build and test running on docker slave
+
+# Prerequisites
+
+- AWS > EC2 > `Docker` installation > Based on your OS image
+- GCP > cloudshell > It has in-buit plugins `Docker`  > `No need to install` 
 
 ## How to build
 
@@ -39,3 +45,9 @@ Output:
     Enabled
     save
 
+## Build java-sample project
+ 
+  -  New > job_name > select pipeline > save
+  -  Select > job_name > go to pipeline > ctrl + c (sample-java project Jenkinsfile) > ctrl + v
+  -  Save
+  -  Build now
